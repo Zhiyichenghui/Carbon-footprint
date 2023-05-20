@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Carbon Footprint Calculator</title>
+        <link rel="stylesheet" href="homepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                  <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">Carbon Footprint</label>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a class="active" href="calculator.html">Footprint Calculator</a></li>
+                  <li><a href="reduction.html">Ways of Reduction</a></li>
+                  <li><a href="statusQuo.html">Status Quo</a></li>
+                </ul>
+              </nav>
+        </header>
+
+        <main>
+            <div id="blankSpace"> </div>
+
+            <div class="calculatorWrapper">
+                <div id="calculator">            
+                    <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/6eWi5jk_OrbrA68DNusc8IlbSE27oZ3eQjg-4hAixdI/embed"></iframe>                    <p>Do not use real usernames and passwords</p>
+                </div>
+                
+                <div id="methodology">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="grid imgGrid">
+                                    <img src="electricity.png">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="grid">
+                                    <h2>Electricity</h2>
+                                    <p>The emission factor for this section is 0.5703 kgCO2e/kWh. We separate the electricity consumption into 4 different parts: air conditioning, lights, showering, and others. For AC, we time each of the energy consumption rates, which is different in winter and summer[1],by the time it is used. The light emission equals the energy consumption rate, which is 0.01 kWh per hour[2], times the time used. The light and air conditioner's carbon footprint is divided evenly among the people in the dorm. The showering part is separated into the water heating[3] and the water production[4]. Aside from all these, each person also accounts for 2 tons of carbon emission from public spaces such as academic buildings (data from the Operation Department).
+                                    </p>
+                                    <citation>Sebastian - CC-BY</citation>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="grid">
+                                    <h2>Food</h2>
+                                    <p>The food sector's calculation is much easier. Each user is classified into five categories, according to their diet: Meat Lover, Average, No Beef, Vegetarian, and Vegan, which each accounts for 3.3t, 2.5t, 1.9t, 1.7t, and 1.5t of CO2 per year, respectively [5]. Then, the average food waste is around 10% to 30%. Therefore, food waste of less than 10% will decrease the food impact by 20%, and food waste of more than 30% will increase the food impact by 10% [6].
+                                    </p>
+                                    <citation>Binley Dan - CC-BY-SA</citation>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="grid imgGrid">
+                                    <img src="food.jpeg">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="grid imgGrid">
+                                    <img src="transportation.jpeg">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="grid">
+                                    <h2>Transportation</h2>
+                                    <p>The train's emission factor is 46g CO2e/km [7]. Since the speed is different for every type of train [8], we let the user input the type of train and the time they took. The emission factor of the plane is 115g CO2e/km [9]. We use estimated distance to calculate the CO2 emission. The car's emission factor is different for petrol cars and electric cars, which is 192g CO2e/km [10] and 114.05g CO2e/km [11] respectively, with an average speed of 30km/hr [12] due to the complexity of roads. Thus, most of our target users (which are the students inside UWCCSC) cannot drive, so the average car occupancy is about 2.3 people, which will be divided from the CO2 emitted.
+
+                                    </p>
+                                    <citation>Owen Nick - CC-0</citation>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <div>
+            <details>
+                <summary>
+                    <h2 class = "detail title">Reference</h1>
+                </summary>
+                <p class = "detail text">[1] Dongde. 3 Feb. 2020, m.idongde.com/c/ac29a87cb3e49f1c.shtml?s=pqizavu. Accessed 18 May 2023.
+
+                    <br>[2]"How many watts does a light bulb use?" EnergySage, news.energysage.com/how-many-watts-does-a-light-bulb-use/
+#:~:text=Using%20an%20LED%20light%20bulb%20for%201%20hour%20per%20day,and%207.30%20kWh%20per%20year. Accessed 18 May 2023.
+
+                    <br>[3] Sust-it. www.sust-it.net/electric-showers.php?tariff=18. Accessed 18 May 2023.
+
+                    <br>[4] "How much water you use." GWM Water, 12 Jan. 2023, www.gwmwater.org.au/conserving-water/saving-water/how-much-water-you-use#:~:text=The%20shower,litres%20of%20water%20. Accessed 18 May 2023.
+
+                    <br>[5] Wilson, Lindsay. "7: Shrink Your Food Footprint." Shrink That Footprint, shrinkthatfootprint.com/shrink-your-food-footprint/. Accessed 18 May 2023.
+
+                    <br>[6] Harris, Verity, et al. "WWF-UK Carbon Footprint Calculator Methodology." WWF-UK, June 2021, www.wwf.org.uk/sites/default/files/2022-05/WWFFootprintCalculator-MethodologyDocument-2021.pdf. Accessed 18 May 2023.
+
+                    <br>[7] T. Baron (SYSTRA), M. Tuchschmid, G. Martinetti and D. Pépion (2011), High-Speed Rail and Sustainability. Background Report: Methodology and results of carbon footprint analysis, International Union of Railways (UIC), Paris, 2011. 
+
+                    <br>[8] "Traveling by Train in China." The China Guide, 25 Nov. 2022, www.thechinaguide.com/blog/traveling-by-train-in-china. Accessed 18 May 2023.
+
+                    <br>[9] "Aviation emissions." Carbon Independent, www.carbonindependent.org/22.html#:~:text=CO2%20emissions%20from%20aviation%20fuel,CO2%20per%20passenger%20per%20hour. Accessed 18 May 2023.
+
+                    <br>[10] Statista. 6 Feb. 2023, www.statista.com/statistics/1185559/carbon-footprint-of-travel-per-kilometer-by-mode-of-transport/. Accessed 18 May 2023.
+
+                    <br>[11] "EV Charging - How much electricity does an electric car use?" Virta, 20 Sept. 2022, www.virta.global/blog/ev-charging-101-how-much-electricity-does-an-electric-car-use#:~:text=An%20average%20electric%20car%20consumes,closer%20to%200%2C2%20kilowatthours. Accessed 18 May 2023.
+
+                    <br>[12] Movotiv. movotiv.com/statistics#:~:text=Every%20day%2C%20there%20are%20some,h%20(or)%2018.6%20mph. Accessed 18 May 2023.    </p>
+                    <hr>
+            </details>
+            <hr>
+        </div>
+
+        
+        <footer>
+            <a id="creativecommons" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" height="20px"/>
+            </a>
+            <br />
+            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+        </footer>
+        
+
+    </body>
+</html>
